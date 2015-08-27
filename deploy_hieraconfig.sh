@@ -24,3 +24,4 @@ chown -R .puppet $HIERADATA
 find $HIERADATA -type f -exec chmod 640 {} \;
 find $HIERADATA -type d -exec chmod 750 {} \;
 chmod 0644 $HIERACONF
+echo "Done."
