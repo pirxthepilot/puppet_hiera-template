@@ -1,0 +1,35 @@
+---
+#############################
+## Puppet agent (optional) ##
+#############################
+
+#profile::base::puppet_interval: '1h'
+
+############################
+## NTP servers (required) ##
+############################
+
+profile::base::ntp_servers:
+  - time.nist.gov
+  - 0.pool.ntp.org
+  - 1.pool.ntp.org
+
+##########################
+## Time zone (required) ##
+##########################
+
+profile::base::timezone: 'UTC'
+
+
+##########################################################
+## Nagios server (required for profile::agent::checkmk) ##
+##########################################################
+
+profile::agent::checkmk::nagios_server: '192.168.186.243'
+
+
+##############################
+## Proxy servers (optional) ##
+##############################
+#profile::base::proxy_server: '1.1.1.1'
+#profile::base::proxy_port: '3268'
