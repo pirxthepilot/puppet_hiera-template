@@ -3,16 +3,8 @@
 ## Puppet agent (optional) ##
 #############################
 
-#profile::base::puppet_interval: '1h'
+#profile::base::puppet_interval: '30m'
 
-############################
-## NTP servers (required) ##
-############################
-
-profile::base::ntp_servers:
-  - time.nist.gov
-  - 0.pool.ntp.org
-  - 1.pool.ntp.org
 
 ##########################
 ## Time zone (required) ##
@@ -21,11 +13,25 @@ profile::base::ntp_servers:
 profile::base::timezone: 'UTC'
 
 
-##########################################################
-## Nagios server (required for profile::agent::checkmk) ##
-##########################################################
+############################
+## NTP servers (required) ##
+############################
 
+profile::base::ntp_servers:
+  - time.nist.gov
+
+
+############
+## Agents ##
+############
+
+# For profile::agent::checkmk
 profile::agent::checkmk::nagios_server: '192.168.186.243'
+
+# For profile::agent::ossec
+profile::agent::ossec::ossec_server: '1.2.3.4'
+#profile::agent::ossec::config_profile: 'foobar'
+#profile::agent::ossec::ar_repeat: '30,60,240,720,1440'
 
 
 ##############################
