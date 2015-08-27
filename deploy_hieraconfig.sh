@@ -16,7 +16,7 @@ fi
 
 # Copy
 cp $SCRIPTDIR/hiera.yaml $HIERACONF
-cp -a $SCRIPTDIR/hieradata $HIERADATA
+cp -aT $SCRIPTDIR/hieradata $HIERADATA
 
 
 # Adjust permissions
