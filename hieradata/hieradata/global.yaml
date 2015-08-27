@@ -31,5 +31,5 @@ profile::agent::checkmk::nagios_server: '192.168.186.243'
 ##############################
 ## Proxy servers (optional) ##
 ##############################
-#profile::base::proxy_server: '1.1.1.1'    # Default: 'none'
-#profile::base::proxy_port: '3268'         # Default: 'none'
+#profile::base::proxy_server: '1.1.1.1'
+#profile::base::proxy_port: '3268'
