@@ -26,10 +26,10 @@ profile::base::ntp_servers:
 ############
 
 # For profile::agent::checkmk
-profile::agent::checkmk::nagios_server: '192.168.186.243'
+profile::agent::checkmk::nagios_server: '3.3.3.3'
 
 # For profile::agent::ossec
-profile::agent::ossec::ossec_server: '1.2.3.4'
+profile::agent::ossec::ossec_server: '2.2.2.2'
 #profile::agent::ossec::config_profile: 'foobar'
 #profile::agent::ossec::ar_repeat: '30,60,240,720,1440'
 
