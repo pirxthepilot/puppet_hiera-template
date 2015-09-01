@@ -4,7 +4,7 @@
 # to the proper locations:
 # - /etc/hiera.yaml
 # - /etc/puppet/hieradata
-# v1.1
+# v1.2
 
 SCRIPTDIR="`dirname $0`"
 HIERACONF='/etc/hiera.yaml'
@@ -31,7 +31,7 @@ cp -aT $SCRIPTDIR/hieradata $HIERADATA
 
 # Adjust permissions
 echo "Adjusting permissions.."
-chown -R .puppet $HIERADATA
+chown -R root.puppet $HIERADATA
 find $HIERADATA -type f -exec chmod 640 {} \;
 find $HIERADATA -type d -exec chmod 750 {} \;
 chmod 0644 $HIERACONF
