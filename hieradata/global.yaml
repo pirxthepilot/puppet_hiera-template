@@ -1,9 +1,9 @@
 ---
-#############################
-## Puppet agent (optional) ##
-#############################
+##################################
+## Organization name (required) ##
+##################################
 
-#profile::base::puppet_interval: '30m'
+profile::base::org_name: 'Setec Astronomy'
 
 
 ##########################
@@ -39,3 +39,11 @@ profile::agent::ossec::ossec_server: '2.2.2.2'
 ##############################
 #profile::base::proxy_server: '1.1.1.1'    # Default: 'none'
 #profile::base::proxy_port: '3268'         # Default: 'none'
+
+
+#############################
+## Puppet agent (optional) ##
+#############################
+
+#profile::base::puppet_interval: '30m'
+
