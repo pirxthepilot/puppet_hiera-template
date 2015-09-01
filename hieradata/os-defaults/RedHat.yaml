@@ -8,6 +8,20 @@ profile::base::centos6::ntp_interfaces:
   - eth0
 
 
+#######################
+## selinux (optional) ##
+#######################
+
+#profile::base::centos6::selinux_mode: 'enforcing'
+
+
+#######################
+## sysctl (optional) ##
+#######################
+
+#profile::base::centos6::sysctl_ipv4forward: '0'
+
+
 ###############################
 ## Login/password (optional) ##
 ###############################
@@ -21,13 +35,6 @@ profile::base::centos6::ntp_interfaces:
 #profile::base::centos6::login_pw_warnage: '7'
 #profile::base::centos6::login_lo_attempts: '7'
 #profile::base::centos6::login_lo_unlocksec: '1200'
-
-
-#######################
-## sysctl (optional) ##
-#######################
-
-#profile::base::centos6::sysctl_ipv4forward: '0'
 
 
 #####################
