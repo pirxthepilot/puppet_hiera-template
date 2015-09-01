@@ -4,6 +4,7 @@
 # to the proper locations:
 # - /etc/hiera.yaml
 # - /etc/puppet/hieradata
+# v1.1
 
 SCRIPTDIR="`dirname $0`"
 HIERACONF='/etc/hiera.yaml'
@@ -17,7 +18,7 @@ fi
 
 # Backup
 echo "Backing up current files.."
-cp $HIERACONF $HIERACONF_$DATEFORM
+cp $HIERACONF ${HIERACONF}_$DATEFORM
 if [ -d "$HIERADATA" ]; then
 	cp -a $HIERADATA ${HIERADATA}_$DATEFORM
 fi
