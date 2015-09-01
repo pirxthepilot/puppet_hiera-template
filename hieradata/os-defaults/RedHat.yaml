@@ -27,7 +27,7 @@ profile::base::centos6::ntp_interfaces:
 ## sysctl (optional) ##
 #######################
 
-#profile::base::centos6::sysctl_ipv4forward: '1'
+#profile::base::centos6::sysctl_ipv4forward: '0'
 
 
 #####################
