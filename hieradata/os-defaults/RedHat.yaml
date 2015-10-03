@@ -70,3 +70,21 @@ profile::base::centos6::ntp_interfaces:
 #profile::base::centos6::clamav_mirrors:
 #  - 'db.us.clamav.net'
 #profile::base::centos6::clamav_scanhour: '8'
+
+
+##################################
+## Active Directory integration ##
+##################################
+
+#profile::base::centos6::auth_activedir: 'no'
+
+# Required if auth_activedir is 'yes' (default is 'no')
+# It is recommended that auth_activedir is set per node!
+
+#profile::base::centos6::auth_ad_domain: 'ad.example.com'
+#profile::base::centos6::auth_ad_domain_nb: 'AD-EXAMPLE'
+#profile::base::centos6::auth_ad_servers:
+#  - dc1.ad.example.com
+#  - dc2.ad.example.com
+#profile::base::centos6::auth_ad_acl_dn: 'memberOf=CN=Linux.Admins,CN=Users,DC=ad,DC=example,DC=com'
+
