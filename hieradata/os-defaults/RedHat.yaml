@@ -49,6 +49,7 @@ profile::base::centos6::ntp_interfaces:
 #profile::base::centos6::sshd_passwordauth: 'yes'
 #profile::base::centos6::sshd_usepam: 'yes'
 #profile::base::centos6::sshd_tcpforwarding: 'no'
+#profile::base::centos6::sshd_usedns: 'no'
 #profile::base::centos6::sshd_allowgroups: 'wheel'
 
 
@@ -86,5 +87,6 @@ profile::base::centos6::ntp_interfaces:
 #profile::base::centos6::auth_ad_servers:
 #  - dc1.ad.example.com
 #  - dc2.ad.example.com
-#profile::base::centos6::auth_ad_acl_dn: 'memberOf=CN=Linux.Admins,CN=Users,DC=ad,DC=example,DC=com'
+#profile::base::centos6::auth_ad_group_dn: 'CN=Linux.Admins,CN=Users,DC=ad,DC=example,DC=com'
+#profile::base::centos6::auth_ad_cache_cr: 'false'
 
