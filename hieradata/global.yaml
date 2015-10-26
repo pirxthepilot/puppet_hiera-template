@@ -27,6 +27,9 @@ profile::base::ntp_servers:
 
 # For profile::agent::checkmk
 profile::agent::checkmk::nagios_server: '3.3.3.3'
+#profile::agent::checkmk::bind_ip: 0
+  # bind_ip is optional and should be set on individual nodes
+  # Default value (if not set) is eth0 IP address
 
 # For profile::agent::ossec
 profile::agent::ossec::ossec_server: '2.2.2.2'
