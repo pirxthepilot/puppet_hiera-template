@@ -45,6 +45,9 @@ profile::base::centos6::ntp_interfaces:
 ## sshd (optional) ##
 #####################
 
+# Enables/disables sshd_config management
+#profile::base::centos6::sshd_manage: true
+
 #profile::base::centos6::sshd_port: 22
 #profile::base::centos6::sshd_addressfamily: 'any'
 #profile::base::centos6::sshd_listenaddress:
