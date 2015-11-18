@@ -19,6 +19,10 @@ profile::base::centos6::ntp_interfaces:
 ## sysctl (optional) ##
 #######################
 
+# Purge original contents of systcl.d (if any)
+#profile::base::centos6::sysctl_purge: true
+
+# Enable or disable IPv4 forward
 #profile::base::centos6::sysctl_ipv4forward: '0'
 
 
